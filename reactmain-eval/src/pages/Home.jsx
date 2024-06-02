@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Box, Button, Grid, Select, Text } from "@chakra-ui/react";
@@ -64,7 +65,7 @@ const Home = () => {
             <Text>{product.category}</Text>
             <Text>${product.price}</Text>
             <Button mt={2} colorScheme="teal">
-              <Link to={`/product`}>More Details</Link>
+              <Link to={`/product/${product.id}`}>More Details</Link>
             </Button>
           </Box>
         ))}
