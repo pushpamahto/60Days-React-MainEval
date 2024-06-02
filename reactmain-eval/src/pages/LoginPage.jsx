@@ -24,6 +24,7 @@ const LoginPage = () => {
     } catch (error) {
       setError('Invalid email or password');
     }
+    
   };
 
   return (
